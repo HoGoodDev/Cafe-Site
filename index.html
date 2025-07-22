@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean & Bear Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Comic+Neue&family=Fredoka+One&family=Poppins&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/BeanAndBearMugLogo.png" alt="Bean and Bear Logo" />
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <img
+        src="./assets/delicious-coffee-beans-arrangement-removebg-preview__1_-removebg-preview.png"
+        alt="Coffee Beans Arrangement"
+      />
+      <h1>Bean & Bear Cafe</h1>
+      <p>Sip, Snack, Stay Cozy</p>
+      <a href="#order" class="btn">Order Online</a>
+    </section>
+
+    <div class="gallery">
+      <h2>Customer Favorites</h2>
+      <div class="favorite-item" tabindex="0">
+        <img src="./assets/Screenshot 2025-07-21 134642.png" alt="Latte" />
+        <h3>Cozy Vanilla Latte</h3>
+        <p>
+          Our signature vanilla latte, topped with creamy foam and a touch of
+          cinnamon.
+        </p>
+      </div>
+
+      <div class="favorite-item" tabindex="0">
+        <img src="./assets/Screenshot 2025-07-21 134655.png" alt="Pastry" />
+        <h3>Fresh Berry Danish</h3>
+        <p>
+          Flaky, buttery pastry filled with seasonal berries and cream cheese.
+        </p>
+      </div>
+
+      <div class="favorite-item" tabindex="0">
+        <img
+          src="./assets/Screenshot 2025-07-21 134704.png"
+          alt="Cafe Interior"
+        />
+        <h3>Our Cozy Corner</h3>
+        <p>
+          A peek inside the cafe — comfy seating, warm lights, and peaceful
+          vibes.
+        </p>
+      </div>
+    </div>
+
+    <section id="order" class="section">
+      <h2>Order Online</h2>
+      <iframe
+        src="https://beanandbearcafe.square.site/s/order"
+        frameborder="0"
+        class="order-frame"
+        title="Order Online"
+      ></iframe>
+    </section>
+
+    <section id="about" class="about-section-cozy">
+      <h2>About Bean & Bear Café</h2>
+      <div class="about-cozy-content">
+        <div class="about-cozy-text">
+          <p>
+            Welcome to your local spot for fresh coffee, homemade treats, and a
+            dose of cozy. Founded in Edinboro by friends and animal lovers, Bean
+            & Bear Café is inspired by our own Fletcher “Bean” (dog) and
+            Muenster “Bear” (cat)—because life (and coffee) is better shared.
+          </p>
+          <p>
+            Whether you’re here to work, relax, or simply enjoy good company,
+            we’ve got comfy seating, friendly faces, and free Wi-Fi waiting for
+            you. Your home away from home—paw prints included.
+          </p>
+        </div>
+        <div class="about-cozy-photos">
+          <div class="about-cozy-pic">
+            <img
+              src="./assets/Snapchat-137266138-removebg-preview.png"
+              alt="Fletcher Bean the dog"
+            />
+            <span>Bean 🐶</span>
+          </div>
+          <div class="about-cozy-pic">
+            <img
+              src="./assets/20200214_223356-removebg-preview.png"
+              alt="Muenster Bear the cat"
+            />
+            <span>Bear 🐱</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <h2>Visit Us</h2>
+      <p>222 W Plum St #500, Edinboro, PA 16412</p>
+      <p>Mon - Sun: 7am - 6pm</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.309367507124!2d-80.13341932400937!3d41.87426097124409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88326371ab3b2363%3A0x46b7a02fa7bda36!2s222%20W%20Plum%20St%20%23500%2C%20Edinboro%2C%20PA%2016412!5e0!3m2!1sen!2sus!4v1721575488000!5m2!1sen!2sus"
+        width="100%"
+        height="500"
+        style="border: 0; border-radius: 10px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map-frame"
+        title="Bean & Bear Cafe Location"
+      >
+      </iframe>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Bean & Bear Cafe</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Fade in sections on scroll
+      const sections = document.querySelectorAll(
+        ".section, .gallery, #about, #visit"
+      );
+
+      function revealOnScroll() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        sections.forEach((section) => {
+          const top = section.getBoundingClientRect().top;
+          if (top < triggerBottom) {
+            section.classList.add("visible");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+
+      // Simple parallax effect on hero image based on scroll
+      const heroImg = document.querySelector(".hero img");
+
+      window.addEventListener("scroll", () => {
+        if (!heroImg) return;
+        const scrollY = window.scrollY;
+        heroImg.style.transform = `translateY(${scrollY * 0.3}px)`;
+      });
+    </script>
+  </body>
+</html>
