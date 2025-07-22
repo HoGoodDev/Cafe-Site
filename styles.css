@@ -296,13 +296,6 @@ header {
   flex: 0 1 220px;
 }
 .pet-photo-box {
-  background: linear-gradient(
-    180deg,
-    rgba(227, 240, 217, 1) 0%,
-    rgba(199, 215, 166, 1) 100%
-  );
-  border-radius: 22px;
-  box-shadow: 0 4px 14px rgba(99, 128, 90, 0.08);
   padding: 1.2rem 1rem 1rem 1rem;
   text-align: center;
 }
@@ -311,8 +304,6 @@ header {
   height: 300px;
   object-fit: contain;
   border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(99, 128, 90, 0.08);
 }
 .pet-photo-box span {
   display: block;
@@ -392,7 +383,6 @@ footer {
   text-align: center;
   font-family: "Comfortaa", cursive;
   font-size: 1rem;
-  border-radius: 0 0 25px 25px;
 }
 
 .footer-content {
