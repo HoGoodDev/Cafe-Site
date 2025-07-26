@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka/static/Fredoka-Regular.ttf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,70 +17,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Header and Navbar */
-header {
-  background-color: #fff;
-  border-bottom: 1px solid #eaeaea;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(99, 128, 90, 0.1);
-}
-
-.navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  width: 5em;
-  height: 5em;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #4a5a42;
-  font-weight: 600;
-  font-family: "Comfortaa", cursive;
-  position: relative;
-  padding: 0.25rem 0;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.navbar a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #a2c2a4;
-  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navbar a:hover,
-.navbar a:focus {
-  color: #a2c2a4;
-  transform: translateY(-2px);
-}
-
-.navbar a:hover::after,
-.navbar a:focus::after {
-  width: 100%;
 }
 
 /* Hero Section */
@@ -108,14 +49,16 @@ header {
 
 .hero h1 {
   font-size: 4.5rem;
-  font-family: "Fredoka One", cursive;
+  font-family: sans-serif;
+  text-transform: uppercase;
   text-shadow: 1px 1px 4px rgba(162, 194, 164, 0.7);
   margin: 0;
 }
 
 .hero p {
   font-size: 1.4rem;
-  font-family: "Comic Neue", cursive;
+  font-family: sans-serif;
+  text-transform: lowercase;
   letter-spacing: 0.03em;
   color: #557a4a;
   margin: 0;
@@ -161,11 +104,12 @@ header {
 }
 
 .latest-item h2 {
-  font-family: "Fredoka One", cursive;
+  font-family: sans-serif;
+  text-transform: uppercase;
   font-size: 3rem;
-  color: #63805a;
+  color: #4a5a42;
   margin-bottom: 1.4rem;
-  text-transform: lowercase;
+
   text-shadow: 1px 1px 3px rgba(99, 128, 90, 0.2);
 }
 
@@ -196,7 +140,7 @@ header {
 }
 
 .latest-item-card h3 {
-  font-family: "Fredoka One", cursive;
+  font-family: sans-serif;
   font-size: 2rem;
   color: #63805a;
   margin-bottom: 0.6rem;
@@ -223,9 +167,10 @@ header {
 .gallery h2 {
   width: 100%;
   text-align: center;
-  font-family: "Fredoka One", cursive;
+  font-family: sans-serif;
+  text-transform: uppercase;
   font-size: 3rem;
-  color: #63805a;
+  color: #4a5a42;
   margin-bottom: 1.5rem;
   text-shadow: 1px 1px 3px rgba(99, 128, 90, 0.2);
 }
@@ -332,9 +277,10 @@ header {
 }
 
 .about-section h2 {
-  font-family: "Fredoka One", cursive;
+  font-family: sans-serif;
+  text-transform: uppercase;
   font-size: 3rem;
-  color: #63805a;
+  color: #4a5a42;
   margin-bottom: 1.4rem;
 }
 
@@ -374,7 +320,6 @@ header {
   height: 300px;
   object-fit: contain;
   border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(99, 128, 90, 0.15);
 }
 
 .pet-photo-box span {
@@ -405,6 +350,7 @@ header {
 #visit img {
   width: 70px;
   height: 70px;
+  margin-bottom: 1rem;
 }
 
 .map-frame {

@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Order Now</title>
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/order.css" />
   </head>
   <body>
     <header>
-      <div class="navbar">
+      <nav class="navbar">
         <div class="logo">
-          <img src="./assets/BeanAndBearMugLogo.png" alt="Bean and Bear Logo" />
+          <a href="../index.html">
+            <img
+              src="../assets/images/logo/BeanAndBearMugLogo.png"
+              alt="Bean and Bear Logo"
+            />
+          </a>
         </div>
         <ul>
-          <li><a href="#order">Order</a></li>
-          <li><a href="#community">Community</a></li>
-          <li><a href="#catering">Catering</a></li>
-          <li><a href="#contact-us">Contact us</a></li>
+          <li><a href="./order.html">Order</a></li>
+          <li><a href="./community.html">Community</a></li>
+          <li><a href="./catering.html">Catering</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
         </ul>
-      </div>
-
-      <section id="order" class="section">
-        <h2>Order Online</h2>
-        <iframe
-          src="https://beanandbearcafe.square.site/s/order"
-          frameborder="0"
-          class="order-frame"
-          title="Order Online"
-        ></iframe>
-      </section>
+      </nav>
     </header>
+    <section id="order" class="order-section">
+      <h2>Order now for pick up or delivery</h2>
+      <iframe
+        src="https://beanandbearcafe.square.site/s/order"
+        frameborder="0"
+        class="order-frame"
+        title="Order Online"
+      ></iframe>
+    </section>
   </body>
 </html>
